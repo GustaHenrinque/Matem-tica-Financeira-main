@@ -1,0 +1,366 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: rgb(25,25,32);
+    background: linear-gradient(0deg, rgba(25,25,32,1) 16%, rgba(3,17,101,1) 100%);
+    color: white;
+    padding: 80px;
+    text-align: center;
+    
+}
+
+#img_empresa {
+    
+    width:120px;
+    padding-right: 30px;
+    height: 120px;
+    padding-top: 5px;
+    
+}
+#img_finance {
+    width:20px;
+
+    height: 20px;
+}
+
+.div1{
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+    
+}
+.div1 img { 
+ margin-left: 170px;
+}
+
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 50px;
+}
+
+
+.finance-summary {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    top: -60px; 
+}
+
+.card {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 29px;
+    text-align: center;
+    width: 190px;
+    box-shadow: 20 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 35px;
+    justify-content: center;
+    
+
+   
+    
+}
+.finance-summary button{
+     border: none;
+     background: #f4f4f4;
+     color: 1px solid #ddd;
+}
+
+.transactions button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white; 
+    border-radius: 0px; 
+}
+
+.transactions button:hover {
+    background-color: #0056b3; 
+}
+
+.transactions {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+.imgs{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.card.total-negative {
+    background-color: #f8d7da; 
+    border-color: #f5c6cb;
+}
+
+.card.total-positive {
+    background-color: #d4edda; 
+    border-color: #c3e6cb;
+}           
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 10; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 600px;
+    border-radius: 8px; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+
+#transactionForm button {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    border-radius: 5px; 
+}
+
+#transactionForm button:hover {
+    background-color: #0056b3;
+}
+
+
+#transactionsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; 
+}
+
+#transactionsTable th, #transactionsTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#transactionsTable th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.finance-summary {
+    margin-bottom: 20px; 
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal2{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content2 {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close2 {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  footer {
+    background: rgb(25,25,32);
+    background: linear-gradient(0deg, rgba(25,25,32,1) 16%, rgba(3,17,101,1) 100%);
+    color: white;
+    padding: 50px;
+}
+<<<<<<< HEAD
+<style>
+        /* Estilo do botão transparente */
+        #entrarBtn {
+            background-color: transparent; /* Fundo transparente */
+            border: none; /* Remove a borda */
+            color: inherit; /* Mantém a cor do texto conforme o estilo do texto ao redor */
+            font-size: 16px; /* Tamanho da fonte */
+            cursor: pointer; /* Mostra o cursor de mão ao passar o mouse */
+        }
+
+        #entrarBtn:hover {
+            opacity: 0.7; /* Efeito de opacidade ao passar o mouse */
+        }
+    </style>
+=======
+
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    table, th, td {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 250px;
+    }
+
+    table, th, td {
+        font-size: 16px;
+    }
+}
+>>>>>>> fd3183906b95bd1928e03c2c1efa0cb509e0cb04

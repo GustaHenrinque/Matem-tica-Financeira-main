@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: rgb(25,25,32);
+    background: linear-gradient(0deg, rgba(25,25,32,1) 16%, rgba(3,17,101,1) 100%);
+    color: white;
+    padding: 80px;
+    text-align: center;
+}
+#img_empresa {
+    
+    width:120px;
+    padding-right: 30px;
+    height: 120px;
+    padding-top: 5px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.simulador-container {
+    background-color: #fff;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#resultados {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#grafico {
+    margin-top: 20px;
+}
+footer {
+    background: rgb(25,25,32);
+    background: linear-gradient(0deg, rgba(25,25,32,1) 16%, rgba(3,17,101,1) 100%);
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+footer {
+    background: rgb(25,25,32);
+    background: linear-gradient(0deg, rgba(25,25,32,1) 16%, rgba(3,17,101,1) 100%);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+@media (max-width: 480px) {
+    .simulador {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .simulador h2 {
+        font-size: 1.5rem;
+    }
+
+    .simulador input,
+    .simulador select,
+    .simulador button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .simulador {
+        padding: 25px;
+        max-width: 80%;
+    }
+
+    .simulador h2 {
+        font-size: 1.8rem;
+    }
+
+    .simulador input,
+    .simulador select,
+    .simulador button {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .simulador {
+        padding: 30px;
+        max-width: 70%;
+    }
+
+    .simulador h2 {
+        font-size: 2rem;
+    }
+
+    .simulador input,
+    .simulador select,
+    .simulador button {
+        font-size: 1.1rem;
+    }
+}
